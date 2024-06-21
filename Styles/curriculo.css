@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+:root {
+    --cor-primaria: rgb(255, 255, 255);
+    --cor-secundaria: rgb(0, 0, 0);
+    --cor-tercearia: rgb(113, 41, 207);
+
+    --fonte--titulo: "Playfair Display", serif;
+    --fonte-paragrafo: "Work Sans", sans-serif;
+    --fonte-trechos: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    box-sizing: border-box;
+    background-color: var(--cor-primaria);
+    color: var(--cor-secundaria);
+}
+
+.apresentacao {
+    padding: 2% 15%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.apresentacao__conteudo {
+    width: 800px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+
+
+
+.cabecalho {
+    padding: 2% 0 0 15%;
+    border-bottom: 1px solid var(--cor-tercearia);
+}
+
+.menu {
+    display: flex;
+    gap: 80px;
+}
+
+.menu__link {
+    font-family: var(--fonte-trechos);
+    font-size: 24px;
+    font-weight: 600;
+    color: var(--cor-tercearia);
+    text-decoration: none;
+}
+
+.titulo__curriculo {
+    color: var(--cor-secundaria);
+
+}
+
+.titulo {
+    font-size: 36px;
+    font-family: var(--fonte--titulo);
+}
+
+.paragrafo__objetivo {
+    font-size: 24px;
+    font-family: var(--fonte-paragrafo);
+    
+}
+.rodape {
+    padding: 20px;
+    color: var(--cor-primaria);
+    background-color: var(--cor-tercearia);
+    text-align: center;
+    font-family: var(--fonte-trechos);
+    font-size: 24px;
+    font-weight: 400 bold;
+}
+
+.titulo__menor {
+    font-size: 30px;
+    font-family: var(--fonte--titulo);
+}
+.paragrafo__lista {
+    font-size: 20px;
+    font-family: var(--fonte-paragrafo);
+    padding: 0 3%;
+}
+
+.paragrafo__lista__hab {
+    font-size: 20px;
+    font-family: var(--fonte-paragrafo);
+    padding: 6px 3%;
+}
