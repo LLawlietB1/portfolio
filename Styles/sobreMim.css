@@ -24,19 +24,12 @@ body {
 }
 
 
-img {
-    max-width: 400px;
-    max-height: 600px;
-    width: auto;
-    height: auto;
-    border-radius: 10%;
-}
-
 .apresentacao {
     padding: 5% 15%;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    gap:80px;
 }
 
 .apresentacao__conteudo {
@@ -53,7 +46,7 @@ img {
 }
 
 .titulo {
-    font-size: 36px;
+    font-size: 2.25rem;
     font-family: var(--fonte--titulo);
 }
 
@@ -64,32 +57,47 @@ img {
 
 .menu__link {
     font-family: var(--fonte-trechos);
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: 600;
     color: var(--cor-tercearia);
     text-decoration: none;
 }
 
 .paragrafo__SobreMim {
-    font-size: 21px;
+    font-size: 1.3rem;
     font-family: var(--fonte-paragrafo);
 }
 
 img.img__sobre {
-    max-width: 600px;
-    max-height: 900px;
-    width: 100%;
+    width: 50%;
     height: auto;
     border-radius: 20%;
     border: 5px solid var(--cor-tercearia);
 }
 
 .rodape {
-    padding: 20px;
+    padding: 2%;
     color: var(--cor-primaria);
     background-color: var(--cor-tercearia);
     text-align: center;
     font-family: var(--fonte-trechos);
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: 400 bold;
+}
+
+@media (max-width: 1200px) {
+
+    .cabecalho{
+        padding: 5%;
+    }
+    .menu{
+        justify-content: center;
+    }
+    .apresentacao {
+        flex-direction: column-reverse;
+        padding: 10%;
+    }
+    .apresentacao__conteudo{
+        width: auto;
+    }
 }
