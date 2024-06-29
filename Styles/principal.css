@@ -174,4 +174,50 @@ body {
     .apresentacao__conteudo{
         width: auto;
     }
+    .overlay{
+        display: none;
+    }
+}
+
+@media screen and (max-width:530px) {
+    .cabecalho{
+        padding: 5%;
+    }
+    .menu{
+        gap: 35px;
+    }
+    .menu__link{
+        font-size: 1.125rem;
+        width: 40em;
+        text-align: center;
+    }
+
+    .apresentacao{
+        padding: 8%;
+        gap: 35px;
+    }
+    .titulo{
+        font-size: 1.875rem;
+    }
+    .paragrafo{
+        font-size: 1.12rem;
+    }
+    .links__titulo{
+        font-size: 1.4375rem;
+        font-weight: 500;
+    }
+    .img__principal{
+        width: 100%;
+        justify-content: center;
+    }
+    .botao{
+        gap: 10px;
+        width: 60%;  
+        font-size: 1.2rem;
+        padding: 0.5em 0 0.5em 0;
+        align-items: center;
+    }
+    .rodape{
+        font-size: 1.12rem;
+    }
 }

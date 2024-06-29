@@ -66,10 +66,15 @@ body {
 }
 
 .paragrafo__objetivo {
-    font-size: 1.5rem;
+    font-size: 1.38rem;
     font-family: var(--fonte-paragrafo);
-    
+
 }
+
+.paragrafo__contato {
+    font-size: 1.38rem;
+}
+
 .rodape {
     padding: 2%;
     color: var(--cor-primaria);
@@ -81,34 +86,91 @@ body {
 }
 
 .titulo__menor {
-    font-size: 1.85rem;
+    font-size: 1.9rem;
     font-family: var(--fonte--titulo);
 }
+
 .paragrafo__lista {
-    font-size: 1.25rem;
+    font-size: 1.4rem;
     font-family: var(--fonte-paragrafo);
-    padding: 0 3%;
+    padding: 0.5% 3%;
 }
 
 .paragrafo__lista__hab {
-    font-size: 1.25rem;
+    font-size: 1.4rem;
     font-family: var(--fonte-paragrafo);
-    padding: 2% 3%;
+    padding: 1.5% 3%;
 }
 
 @media (max-width: 1200px) {
 
-    .cabecalho{
+    .cabecalho {
         padding: 5%;
     }
-    .menu{
+
+    .menu {
         justify-content: center;
     }
+
     .apresentacao {
         flex-direction: column-reverse;
         padding: 10%;
     }
-    .apresentacao__conteudo{
+
+    .apresentacao__conteudo {
         width: auto;
+    }
+}
+
+@media screen and (max-width:530px) {
+    .cabecalho {
+        padding: 5%;
+    }
+
+    .menu {
+        gap: 35px;
+    }
+
+    .menu__link {
+        font-size: 1.125rem;
+        width: 40em;
+        text-align: center;
+    }
+
+    .apresentacao {
+        padding: 8%;
+        gap: 35px;
+    }
+
+    .titulo {
+        font-size: 1.5rem;
+    }
+
+    .paragrafo__objetivo {
+        font-size: 1.1rem;
+    }
+
+    .paragrafo__contato {
+        font-size: 1rem;
+    }
+
+    .titulo__menor {
+        font-size: 1.3rem;
+    }
+
+    .paragrafo__lista {
+        font-size: 1.1rem;
+    }
+
+    .paragrafo__lista__hab {
+        font-size: 1rem;
+    }
+
+    .apresentacao__conteudo {
+        gap: 1rem;
+    }
+
+    .rodape {
+        font-size: 1.12rem;
     }
 }

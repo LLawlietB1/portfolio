@@ -69,11 +69,15 @@ body {
 }
 
 img.img__sobre {
-    width: 50%;
+    width: 100%;
     height: auto;
     border-radius: 20%;
     border: 5px solid var(--cor-tercearia);
 }
+.container {
+    position: relative;
+    width: 50%;
+  }
 
 .rodape {
     padding: 2%;
@@ -99,5 +103,42 @@ img.img__sobre {
     }
     .apresentacao__conteudo{
         width: auto;
+    }
+}
+
+@media screen and (max-width:530px) {
+    .cabecalho{
+        padding: 5%;
+    }
+    .menu{
+        gap: 35px;
+    }
+    .menu__link{
+        font-size: 1.125rem;
+        width: 40em;
+        text-align: center;
+    }
+
+    .apresentacao{
+        padding: 8%;
+        gap:35px;
+    }
+    .titulo{
+        font-size: 1.9rem;
+    }
+    .paragrafo__SobreMim{
+        font-size: 1.12rem;
+    }
+
+    img.img__sobre{
+        border: 3px solid var(--cor-tercearia);
+        justify-content: center;
+        width: 100%;
+    }
+    .rodape{
+        font-size: 1.12rem;
+    }
+    .apresentacao__conteudo{
+        gap:2rem;
     }
 }
